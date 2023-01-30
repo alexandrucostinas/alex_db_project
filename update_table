@@ -1,0 +1,36 @@
+-- SO THE NATIONALITY ROWS WERE EMPTY, LET'S UPDATE THEM :)
+
+UPDATE star_player set nationality = 'Nigerian' where id = 1;
+UPDATE star_player set nationality = 'Egiptian' where id = 2;
+UPDATE star_player set nationality = 'Serbian' where id = 3;
+UPDATE star_player set nationality = 'Columbian' where id = 4;
+UPDATE star_player set nationality = 'Brazilian' where id = 5;
+UPDATE star_player set nationality = 'Danish' where id = 6;
+UPDATE star_player set nationality = 'Czech' where id = 7;
+UPDATE star_player set nationality = 'French' where id = 8;
+UPDATE star_player set nationality = 'Dutch' where id = 9;
+UPDATE star_player set nationality = 'Argentine' where id = 10;
+UPDATE star_player set nationality = 'Polish' where id = 11;
+UPDATE star_player set nationality = 'Czech' where id = 12;
+UPDATE star_player set nationality = 'English' where id = 13;
+UPDATE star_player set nationality = 'French' where id = 14;
+UPDATE star_player set nationality = 'Portuguese' where id = 15;
+UPDATE star_player set nationality = 'Turkish' where id = 16;
+UPDATE star_player set nationality = 'English' where id = 17;
+UPDATE star_player set nationality = 'Portuguese' where id = 18;
+UPDATE star_player set nationality = 'Swiss' where id = 19;
+UPDATE star_player set nationality = 'Croatian' where id = 20;
+UPDATE star_player set nationality = 'Brazilian' where id = 21;
+UPDATE star_player set nationality = 'French' where id = 22;
+UPDATE star_player set nationality = 'Ukraine' where id = 23;
+UPDATE star_player set nationality = 'Portuguese' where id = 24;
+UPDATE star_player set nationality = 'Norway' where id = 25;
+UPDATE star_player set nationality = 'English' where id = 26;
+UPDATE star_player set nationality = 'French' where id = 27;
+UPDATE star_player set nationality = 'Maroc' where id = 28;
+UPDATE star_player set nationality = 'Argentine' where id = 29;
+UPDATE star_player set nationality = 'French' where id = 30;
+UPDATE star_player set nationality = 'Italian' where id = 31;
+UPDATE star_player set nationality = 'Haiti' where id = 32;
+
+SELECT * from star_player

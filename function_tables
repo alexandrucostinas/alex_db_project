@@ -1,0 +1,20 @@
+CREATE OR REPLACE FUNCTION insert_fixed_league()
+RETURNS VOID AS $$
+BEGIN
+  INSERT INTO league(name, team_id, country)
+  VALUES ('Georeos Calitus', 7, 'Tanzania');
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION update_coach_nationality(p_id INT)
+RETURNS VOID AS $$
+BEGIN
+  UPDATE coach
+  SET nationality = 'Mozambique'
+  WHERE id = p_id;
+END;
+$$ LANGUAGE plpgsql;
+
+SELECT update_coach_nationality(3);
+

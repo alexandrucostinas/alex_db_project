@@ -1,0 +1,3 @@
+SELECT name, birth_date, nationality
+FROM coach
+WHERE team_id = (SELECT team_id FROM coach WHERE id = 5 );

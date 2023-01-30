@@ -1,0 +1,29 @@
+-- FOR THE JOINS PART, IM GONNA MAKE A BIG FAT JOIN WITH ALL TABLES
+
+select s.name,s.capacity,t.name,g.group_team,g.position,st.name as star_player,st.nationality,st.market_value,p.goals,p.assists,l.name,l.country,c.name,c.nationality from stadium as s
+inner join team as t
+on s.id = t.stadium_id
+inner join groups as g
+on t.groups_id = g.id
+inner join star_player as st
+on st.team_id = t.id
+inner join player_statistics as p
+on p.star_player_id = st.id
+inner join league as l
+on l.team_id = t.id
+inner join coach as c
+on c.team_id = t.id
+
+-- BUT LETS NOT FORGET ABOUT LEFT AND RIGHT JOINS
+
+select * from team
+left join coach
+on coach.team_id = team.id
+
+select * from team
+right join coach
+on coach.team_id = team.id
+
+
+
+

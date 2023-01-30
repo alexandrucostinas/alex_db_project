@@ -1,0 +1,38 @@
+--LETS INSERT THE COACHES
+
+INSERT into coach(name,birth_date,nationality,team_id)
+VALUES
+('Luciano Spaletti','07-04-1959','Italian',1),
+('Jurgen Klopp','16-06-1967','Dutch',2),
+('Alfred Schreuder','02-11-1972','Dutch',3),
+('Michael Beale','04-09-1980','English',4),
+('Sergio Conceicao','15-11-1974','Portuguese',5),
+('Carl Hoefkens','06-10-1978','Belgian',6),
+('Xabi Alonso','25-11-1981','Spanish',7),
+('Diego Simeone','28-05-1970','Argentine',8),
+('Julian Nagelsmann','23-07-1987','Dutch',9),
+('Simone Inzaghi','05-04-1976','Italian',10),
+('Xavi','25-01-1980','Spanish',11),
+('Michal Bilek','13-04-1965','Czech',12),
+('Antonio Conte','31-07-1969','Italian',13),
+('Oliver Glasner','28-08-1974','Austrian',14),
+('Ruben Amorim','27-01-1985','Portuguese',15),
+('Igor Tudor','16-04-1978','Croatian',16),
+('Graham Potter','20-05-1975','English',17),
+('Stefano Pioli','20-10-1965','Italian',18),
+('Matthias Jaissle','05-04-1988','Dutch',19),
+('Ante Cacic','29-09-1953','Croatian',20),
+('Carlo Ancelotti','10-06-1959','Italian',21),
+('Marco Rose','11-09-1976','Dutch',22),
+('Igor Jovicevic','30-11-1973','Croatian',23),
+('Ange Postecoglou','27-08-1965','Australian',24),
+('Pep Guardiola','18-01-1971','Spanish',25),
+('Edin Terzic','30-10-1982','Dutch',26),
+('Jorge Sampaoli','13-03-1960','Argentinian',27),
+('Jacob Neestrup','08-03-1988','Danish',28),
+('Roger Schmidt','13-03-1967','Dutch',29),
+('Christophe Galtier','28-08-1966','French',30),
+('Massimilliano Allegri','11-08-1967','Italian',31),
+('Barak Bakhar','21-09-1979','Israelian',32);
+
+

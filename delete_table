@@ -1,0 +1,5 @@
+-- LETS DELETE SOMETHING
+
+delete from coach where nationality = 'Dutch'
+
+select * from coach

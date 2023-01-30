@@ -1,0 +1,46 @@
+--SELECT
+
+select * from team;
+
+select group_team,team_id from groups;
+
+select name,capacity from stadium
+where capacity >= 50000;
+
+select name,team_id from coach
+where nationality = 'Italian';
+
+select max(goals) from player_statistics;
+select min(assists) from player_statistics;
+select avg(goals) from player_statistics;
+select sum(assists) from player_statistics;
+
+select count(*) from league;
+
+select distinct(country) from league;
+
+select name,market_value from star_player
+where name like 'L%' and market_value > 50000000;
+
+select l.name,l.country, t.name from league as l
+inner join team as t
+on l.team_id = t.id
+where l.country in ('England','Italy');
+
+select g.group_team, t.name,g.position from groups as g
+inner join team as t
+on g.team_id = t.id
+where group_team in ('A','B','C','D') and position in (1,2)
+group by g.position,t.name,g.group_team;
+
+select p.goals,s.name from player_statistics as p
+inner join star_player as s
+on p.star_player_id = s.id
+order by p.goals desc
+
+
+
+
+
+
+
