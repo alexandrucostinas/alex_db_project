@@ -1,0 +1,38 @@
+--INSERTING STADIUM NAMES AND CAPACITY INTO STADIUM TABLE
+
+INSERT INTO stadium(name,capacity) 
+VALUES 
+('Stadio San Paolo',54756),
+('Anfield',53394),
+('Amsterdam Arena',55865),
+('Ibrox Stadium',50817),
+('Estadio Dragao',50033),
+('Jan Breydel',29042),
+('BayArena',30210),
+('Wanda Metropolitano',68456),
+('Allianz Arena',75024),
+('Giuseppe Meazza',80017),
+('Camp Nou',99354),
+('Doosan Arena',11700),
+('Tottenham Hotspur',62850),
+('Deutsche Bank Park',51500),
+('Estadio Jose Alvalade',50095),
+('Stade Velodrome',67394),
+('Stamford Bridge',41837),
+('San Siro',80018),
+('Red Bull Arena',30188),
+('Maksimir',35123),
+('Santiago Bernabeu',81044),
+('ZentralStadio',30189),
+('Olympiyskiy',70050),
+('Celtic Park',60411),
+('Etihad Stadium',53400),
+('Signal Iduna Park',81365),
+('Ramon Sanchez-Pizjuan Stadium',43883),
+('Parken',38065),
+('Estadio da Luz',65000),
+('Parc des Princes',47929),
+('Piemont',41507),
+('Sammy Ofer Stadium',30858);
+
+select * from stadium

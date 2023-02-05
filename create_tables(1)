@@ -1,0 +1,77 @@
+--Creating the table with stadiums of each team
+
+CREATE TABLE IF NOT EXISTS stadium(
+id SERIAL PRIMARY KEY NOT NULL,
+name varchar(100) NOT NULL,
+capacity integer NOT NULL
+);
+
+--Creating the table with the leagues that teams are coming from
+
+CREATE TABLE IF NOT EXISTS groups(
+id SERIAL PRIMARY KEY NOT NULL,
+group_name varchar(1) NOT NULL,
+position integer NOT NULL
+);
+
+-- Creating the table with teams that are involved in this season of Champions League
+
+CREATE TABLE IF NOT EXISTS team(
+id SERIAL PRIMARY KEY NOT NULL,
+name varchar(50) NOT NULL,
+stadium_id integer,
+groups_id integer,
+FOREIGN KEY(stadium_id) REFERENCES stadium
+);
+
+ALTER TABLE groups
+ADD team_id integer;
+
+ALTER TABLE groups
+ADD FOREIGN KEY(team_id) REFERENCES team;
+
+--Creating the table with star players from each team involved in this season
+
+CREATE TABLE IF NOT EXISTS star_player(
+id SERIAL PRIMARY KEY NOT NULL,
+name varchar(100) NOT NULL,
+birth_date date NOT NULL,
+team_id integer,
+nationality varchar(50) ,
+market_value integer NOT NULL,
+FOREIGN KEY(team_id) REFERENCES team,
+UNIQUE(team_id)
+);
+
+--Creating the table with statistics for every star player
+
+CREATE TABLE IF NOT EXISTS player_statistics(
+id SERIAL PRIMARY KEY NOT NULL,
+goals integer NOT NULL,
+assists integer NOT NULL,
+star_player_id integer,
+FOREIGN KEY(star_player_id) REFERENCES star_player,
+UNIQUE(star_player_id)
+);
+
+--Creating the table with coaches from every team
+
+CREATE TABLE IF NOT EXISTS coach(
+id SERIAL PRIMARY KEY NOT NULL,
+name varchar(100) NOT NULL,
+birth_date date NOT NULL,
+nationality varchar(50) NOT NULL,
+team_id integer,
+FOREIGN KEY(team_id) REFERENCES team,
+UNIQUE(team_id)
+);
+
+-- Creating the table with countries that coaches, teams and star players are born or situated in
+
+CREATE TABLE IF NOT EXISTS league(
+name varchar(50) NOT NULL,
+team_id integer,
+country varchar(100) NOT NULL,
+FOREIGN KEY(team_id) REFERENCES team,
+UNIQUE(team_id)
+);
